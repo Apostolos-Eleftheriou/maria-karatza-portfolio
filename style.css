@@ -193,8 +193,7 @@ a {
 .main-one-left-subtext {
     font-size: 26px;
     font-family: 'Alegreya', serif;
-    font-weight: 450;
-    font-style: italic;
+    font-weight: bold;
     color: #111720;
 }
 
@@ -236,8 +235,8 @@ a {
 
 
 .main-two-info {
-    font-size: 55px;
-    font-weight: bolder;
+    font-size: 50px;
+    font-weight: bold;
     color: #1F2937;
     padding: 60px;
     text-align: center;
@@ -426,7 +425,17 @@ footer {
 
 .recent-projects {
     padding: 6px;
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: 30px auto;
     font-size: 55px;
+    background-color: #E9DAC1;
+    border-radius: 10px;
+}
+
+/* .hfix {
+    max-height: 900px;
+} */
+
+.d-block {
+    border-radius: 10px;
 }

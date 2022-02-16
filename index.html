@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script
 			  src="https://code.jquery.com/jquery-3.6.0.min.js"
 			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -26,7 +28,6 @@
             <button class="click">≡</button>
             <div class="list">
                 <button class="links"><a class="dropdown-links" href="#stacks">What im working with</a></button>
-                <button class="links"><a class="dropdown-links" href="#about-me">About me</a></button>
                 <button class="links"><a class="dropdown-links" href="#showcase">Projects</a></button>
                 <button class="links"><a class="dropdown-links" href="#CV">My CV</a></button>
                 <button class="links"><a class="dropdown-links" href="#email">Contact me</a></button>
@@ -39,14 +40,13 @@
     <div class="main-one">
         <div class="main-one-left">
             <div class="main-one-left-header">Hey there!<br>I'm <span class="auto-input"></span></div>
-            <div class="main-one-left-subtext">I'm an aspiring Web Developer
-                that loves to make fast, stylish and responsive web sites and apps. I'm extremely dedicated, hard working and always
-                willing to learn new technologies!
+            <div class="main-one-left-subtext">I'm an aspiring Interior Designer
+                that loves to client's dreams come to life.
             </div>
         </div>
         <div class="main-one-right me"></div>
     </div>
-    <a id="stacks">stacks</a>
+    <a id="stacks"></a>
     <div class="main-two-info">What i'm working with.</div>
     <div class="main-two">
         <div class="main-two-imgs">
@@ -59,72 +59,95 @@
             <img class="imgtwo" src="images/archicad.jpg" alt="css logo">
         </div>
     </div>
-    <div class="main-three">
-        <a id="about-me"></a>
-        <div class="main-three-text"><h2>A few words about myself.</h2><br>
-            <p class="bio"><br>
-            I'm 28 years old, my love for computers and technology goes
-            all the way back to when I was 9 years old. That was when I first 
-            saw a VT220 (a computer terminal which had only a screen and a keyboard).
-            I was but a little kid stroking the keyboard pretending
-            to be coding. That is my first memory as a child and quite frankly 
-            what later in my life proved to be what I actually love doing.<br>
-            <br>I got into computers and started building them for my friends, family and myself.
-            I always was the go to tech guy, to fix a cellphone, a busted computer or a troublesome
-            software..<br>
-            <br>Fast forward to 2020 I made the decision to improve my life for the better.
-            I always was overweight.. and by 26 I was 140kg. So I did what I always do best,
-            analyze, prioritize, study and learn about nutrition and hit the gym with a methodical plan
-            to get the body I always wanted. Learned all about Calories, Macros you name it.
-            A year later I had managed to lose a wooping 65kg and hit my goal weight of 75kg.
-            I was the happiest man alive, but something was missing...<br>
-            <br>So I started this amazing journey with a curriculum named The Odin Project and with it
-            I began learning how to expand upon my problem solving skills and learn HTML, CSS and
-            JavaScript. I'm a very fast learner so I picked it up quite quickly...
-            I'm continuing this never ending journey of knowledge and I want to keep improving
-            on myself and my skills every day...</p>
-        </div>
-    </div>
     <a id="showcase"></a>
-    <h2 class="recent-projects">Recent Projects</h2>
-     <div class="main-four-wrapper">
-        <div class="main-four-project">
-      <div class="project-title">
-        <div class="project-title-text">Rock Paper Scissors</div>
-        <div class="project-title-subtext">Play against the computer! Trying to win gets
-            addicting after a while.
-        </div>
-      </div>
-        <div class="btn-container">
-            <button class="button"><a class="clickable-area" href="https://github.com/Apostolos-Eleftheriou/rock-paper-scissors">Source Code</a></button>
-            <button class="button"><a class="clickable-area" href="https://apostolos-eleftheriou.github.io/rock-paper-scissors/">Live Demo</a></button>
-         </div>
-      </div>
-    </div>
-    <div class="main-five-wrapper">
-        <div class="main-five-project">
-            <div class="project-title">
-                <div class="project-title-text">Etc-A-Sketch</div>
-                <div class="project-title-subtext">This project demonstrates my dom manipulation skills.
-                    Try drawing something!
-                </div>
+    <h2 class="recent-projects">Projects</h2>
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="6"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="7"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="8"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="9"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="10"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="11"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="12"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="13"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="14"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="15"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="16"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="17"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./images/saloni-kouzina.jpg" alt="First slide">
               </div>
-              <div class="btn-container">
-              <button class="button"><a class="clickable-area" href="https://github.com/Apostolos-Eleftheriou/etch-a-sketch">Source Code</a></button>
-              <button class="button"><a class="clickable-area" href="https://apostolos-eleftheriou.github.io/etch-a-sketch/"> Live Demo</a></button>
-                </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/saloni6.1.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/saloni6.2.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/saloni6.3.jpg" alt="4 slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/saloni6.jpg" alt="5 slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/saloni5.jpg" alt="6 slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/saloni4.jpg" alt="7 slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/saloni3.jpg" alt="8 slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/saloni2.jpg" alt="9 slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/saloni1.jpg" alt="10 slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/kouzina1.jpg" alt="11 slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/grafio1.jpg" alt="12 slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 hfix" src="./images/doulapa1.jpg" alt="13 slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/mpanio2.jpg" alt="14 slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/mpanio1.jpg" alt="15 slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 hfix" src="./images/sin8esi1.jpg" alt="16 slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/grafio1.jpg" alt="17 slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 hfix" src="./images/domatio1.jpg" alt="18 slide">
+              </div>
             </div>
-    </div>
-    <div class="main-six-wrapper">
-        <div class="main-six-project">
-            <div class="project-title">
-                <div class="project-title-text">Portofolio</div>
-                <div class="project-title-subtext">The portfolio source code.</div>
-            </div>
-            <div class="btn-container">
-                <button class="button"><a class="clickable-area" href="https://github.com/Apostolos-Eleftheriou/portfolio">Source Code</a></button>
-            </div>
-        </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
     </div>
     <div class="main-seven-wrapper">
         <div class="main-seven-project">
@@ -152,7 +175,7 @@
     </div>
         <a class="gotopbtn" href="#"><i class="fas fa-angle-double-up"></i></a>
     <footer class="footer">
-        <p style="padding-right: 20px;">
+        <p style="padding-right: 20px; margin-bottom: 0;">
           Copyright ©
           <script>
             document.write(new Date().getFullYear())
@@ -163,7 +186,7 @@
             <i class="fab fa-facebook-f"></i></a>
         <a href="https://instagram.com/karatza.maria?utm_medium=copy_link" target="_blank">
             <i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/apostolos-eleftheriou-a16b68230/" target="_blank">
+        <a href="https://www.linkedin.com/in/maria-karatza-212171232" target="_blank">
             <i class="fab fa-linkedin-in"></i></a>
     </footer>
     
@@ -200,5 +223,6 @@
         $(".loader-wrapper").delay(1000).fadeOut("slow");
         });
     </script>
+    
 </body>
 </html>
